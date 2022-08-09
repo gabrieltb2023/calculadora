@@ -1,3 +1,4 @@
+ #Modulos thinker para ejecucuion GUI#
 from tkinter import Tk,Text,Button,END,re
 class Interfaz:
     def __init__(self, ventana):
@@ -42,7 +43,7 @@ class Interfaz:
                 contador+=1
         #Ubicar el último botón al final
         botones[16].grid(row=5,column=0,columnspan=4)
-        
+
         return
 
 
@@ -72,7 +73,7 @@ class Interfaz:
             self.operacion+=str(texto)
             self.mostrarEnPantalla(texto)
         return
-    
+
 
     #Borra el contenido de la pantalla de la calculadora
     def limpiarPantalla(self):
@@ -80,7 +81,7 @@ class Interfaz:
         self.pantalla.delete("1.0", END)
         self.pantalla.configure(state="disabled")
         return
-    
+
 
     #Muestra en la pantalla de la calculadora el contenido de las operaciones y los resultados
     def mostrarEnPantalla(self, valor):
